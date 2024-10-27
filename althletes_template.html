@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Athlete Profile</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/YOUR_ID.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a href="#main">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="mens.html">Men's Team</a></li>
+            <li><a href="womens.html">Women's Team</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>John Doe</h1>
+        <img src="../images/profiles/jdoe123.jpg" alt="Athlete headshot" width="200">
+    </header>
+    <main id="main">
+        <section id="athlete-sr-table">
+            <h2>Athlete's Seasonal Records (SR) per Year</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Season Record (SR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2021</td>
+                        <td>10.12s</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>9.95s</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="athlete-result-table">
+            <h2>Race Results</h2>
+            <table id="athlete-table">
+                <thead>
+                    <tr>
+                        <th>Race</th>
+                        <th>Athlete Time</th>
+                        <th>Athlete Place</th>
+                        <th>Race Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="result-row">
+                        <td><a href="https://example.com/race1">City Marathon</a></td>
+                        <td>3:25:10</td>
+                        <td>5th</td>
+                        <td>Personal Best!</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td><a href="https://example.com/race2">National Championship</a></td>
+                        <td>3:30:15</td>
+                        <td>12th</td>
+                        <td>Strong performance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <!-- Images or embedded media can go here -->
+        </section>
+    </main>
+    <footer>
+        <p>Skyline High School</p>
+        <address>
+            2552 North Maple Road<br>
+            Ann Arbor, MI 48103<br><br>
+            <a href="https://sites.google.com/aaps.k12.mi.us/skylinecrosscountry2021/home">XC Skyline Page</a><br>
+            Follow us on Instagram <a href="https://www.instagram.com/a2skylinexc/"><i class="fa-brands fa-instagram"
+                    aria-label="Instagram"></i></a>
+        </address>
+    </footer>
+    <script>
+        document.querySelectorAll('section').forEach((section) => {
+            section.setAttribute('aria-expanded', 'true');
+            section.addEventListener('click', () => {
+                const isExpanded = section.getAttribute('aria-expanded') === 'true';
+                section.setAttribute('aria-expanded', !isExpanded);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

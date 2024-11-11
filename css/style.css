@@ -12,7 +12,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
+    /* Slightly darker for contrast */
     padding: 10px;
     margin: 0;
 }
@@ -34,7 +35,8 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #fff;
-    background-color: #007bff;
+    background-color: #004a99;
+    /* Increased contrast */
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
@@ -42,12 +44,14 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #0056b3;
+    background-color: #003366;
+    /* Adjusted for contrast */
     transform: scale(1.05);
 }
 
 nav a:active {
-    background-color: #004494;
+    background-color: #003f73;
+    /* Adjusted for contrast */
 }
 
 /* Header Styling */
@@ -57,12 +61,14 @@ header {
 
 header h1 {
     font-size: 1.5em;
-    color: #333;
+    color: #222;
+    /* Darker for better contrast */
 }
 
 header img {
     border-radius: 50%;
-    border: 2px solid #007bff;
+    border: 2px solid #004a99;
+    /* Consistent with new button color */
     margin-top: 10px;
 }
 
@@ -83,25 +89,29 @@ header img {
 .athlete-profile h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #333;
+    color: #222;
+    /* Darker text for contrast */
 }
 
 .athlete-profile p {
     margin: 5px 0;
-    color: #666;
+    color: #555;
+    /* Increased contrast */
 }
 
 /* Gallery Styles */
 .image-gallery {
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: #ebebeb;
+    /* Darker background for contrast */
     text-align: center;
 }
 
 .image-gallery h2 {
     margin-bottom: 10px;
     font-size: 24px;
-    color: #333;
+    color: #222;
+    /* Improved contrast */
 }
 
 .gallery-grid {
@@ -133,12 +143,14 @@ th,
 td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
+    /* Improved contrast */
 }
 
 /* Alternating Row Colors */
 tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: #e5e5e5;
+    /* Improved contrast */
 }
 
 /* Responsive Table: Scrollable */
@@ -196,7 +208,8 @@ section[aria-expanded="false"] .content {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color: #004a99;
+    /* Adjusted for contrast */
     color: #fff;
     border-radius: 50%;
     width: 50px;
@@ -205,7 +218,8 @@ section[aria-expanded="false"] .content {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Slightly darker for contrast */
     cursor: pointer;
     z-index: 10;
 }
@@ -216,7 +230,8 @@ section[aria-expanded="false"] .content {
 }
 
 .result-row:active {
-    background-color: #007bff;
+    background-color: #004a99;
+    /* Adjusted for consistency */
     color: #fff;
 }
 
@@ -224,38 +239,42 @@ section[aria-expanded="false"] .content {
 @media (prefers-color-scheme: dark) {
 
     header h1 {
-        color: #ddd;
+        color: #ccc;
+        /* Lightened for better contrast */
     }
 
     body {
-        background-color: #333;
-        color: #f9f9f9;
+        background-color: #222;
+        color: #e0e0e0;
     }
 
     .athlete-profile h3 {
-        color: #f9f9f9;
+        color: #e0e0e0;
     }
 
     .athlete-profile p {
         margin: 5px 0;
-        color: #c4c4c4;
+        color: #a8a8a8;
+        /* Adjusted for contrast */
     }
 
     nav a,
     footer a {
-        color: #000000;
+        color: #ffffff;
     }
 
     table {
-        border-color: #555;
+        border-color: #666;
     }
 
     tbody tr:nth-child(odd) {
-        background-color: #444;
+        background-color: #333;
+        /* Increased contrast in dark mode */
     }
 
     footer a {
-        color: #b7cee7;
+        color: #99bbff;
+        /* Lightened for contrast */
     }
 }
 
@@ -278,7 +297,8 @@ footer address {
 }
 
 footer a {
-    color: #007bff;
+    color: #98b9dc;
+    /* Adjusted for contrast */
 }
 
 /* Smooth Animations for Section Transitions */

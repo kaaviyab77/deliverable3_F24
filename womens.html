@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styleList.css">
     <script src="https://kit.fontawesome.com/YOUR_ID.js" crossorigin="anonymous"></script>
+    <style>
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #333;
+        }
+
+        #scrollTopBtn:focus {
+            outline: 2px solid #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,21 +40,95 @@
         <ul>
             <li><a href="index.html">Home Page</a></li>
             <li><a href="mens.html">Men's Team</a></li>
+            <li><a href="meets.html">Meets</a></li>
         </ul>
     </nav>
-    <h1>Women's Team Members</h1>
-    <ul>
-        <li><a href="womens_team/Adrienne Stewart21142907.html">Adrienne Stewart</a></li>
-        <li><a href="womens_team/Alexandra Wren21142908.html">Alexandra Wren</a></li>
-        <li><a href="womens_team/Alison Kauffman23564882.html">Alison Kauffman</a></li>
-        <li><a href="womens_team/Ann Kececi24802381.html">Ann Kececi</a></li>
-        <li><a href="womens_team/Arabella Kessler23564883.html">Arabella Kessler</a></li>
-        <li><a href="womens_team/Ayla Balazer19352189.html">Ayla Balazer</a></li>
-        <li><a href="womens_team/Becca Van Lent24262808.html">Becca Van Lent</a></li>
-        <li><a href="womens_team/Calla Sopoci26328689.html">Calla Sopoci</a></li>
-        <li><a href="womens_team/Cecilia DeGuzman21142897.html">Cecilia DeGuzman</a></li>
-        <li><a href="womens_team/Elin Tenbrink23349718.html">Elin Tenbrink</a></li>
-    </ul>
+    <div id="main" role="main">
+        <h1>Women's Team Members</h1>
+
+        <!-- Search bar -->
+        <div>
+            <label for="searchInput">Search Name:</label>
+            <input type="text" id="searchInput" placeholder="Enter name to search..."
+                aria-label="Search input for team members">
+            <button onclick="searchName()" aria-label="Search button">Search</button>
+        </div>
+
+        <ul>
+            <!-- Added tabindex for better navigation -->
+            <li><a href="womens_team/Adrienne Stewart21142907.html" tabindex="0">Adrienne Stewart</a></li>
+            <li><a href="womens_team/Alexandra Wren21142908.html" tabindex="0">Alexandra Wren</a></li>
+            <li><a href="womens_team/Alison Kauffman23564882.html" tabindex="0">Alison Kauffman</a></li>
+            <li><a href="womens_team/Ann Kececi24802381.html" tabindex="0">Ann Kececi</a></li>
+            <li><a href="womens_team/Arabella Kessler23564883.html" tabindex="0">Arabella Kessler</a></li>
+            <li><a href="womens_team/Ayla Balazer19352189.html" tabindex="0">Ayla Balazer</a></li>
+            <li><a href="womens_team/Becca Van Lent24262808.html" tabindex="0">Becca Van Lent</a></li>
+            <li><a href="womens_team/Calla Sopoci26328689.html" tabindex="0">Calla Sopoci</a></li>
+            <li><a href="womens_team/Cecilia DeGuzman21142897.html" tabindex="0">Cecilia DeGuzman</a></li>
+            <li><a href="womens_team/Elin Tenbrink23349718.html" tabindex="0">Elin Tenbrink</a></li>
+            <li><a href="womens_team/Elsa Wenzlaff22520388.html" tabindex="0">Elsa Wenzlaff</a></li>
+            <li><a href="womens_team/Emily Mei22520376.html" tabindex="0">Emily Mei</a></li>
+            <li><a href="womens_team/Grace Hopkins21142901.html" tabindex="0">Grace Hopkins</a></li>
+            <li><a href="womens_team/Gwen Stotts-Walshe24802677.html" tabindex="0">Gwen Stotts-Walshe</a></li>
+            <li><a href="womens_team/Irie Scrase23564884.html" tabindex="0">Irie Scrase</a></li>
+            <li><a href="womens_team/Isla Tharp23349719.html" tabindex="0">Isla Tharp</a></li>
+            <li><a href="womens_team/Julianna Heung23687880.html" tabindex="0">Julianna Heung</a></li>
+            <li><a href="womens_team/Katie Yuan23349724.html" tabindex="0">Katie Yuan</a></li>
+            <li><a href="womens_team/LeAnne Fayyad24802883.html" tabindex="0">LeAnne Fayyad</a></li>
+            <li><a href="womens_team/Lila Edison23349671.html" tabindex="0">Lila Edison</a></li>
+            <li><a href="womens_team/Lily Greenberg23687875.html" tabindex="0">Lily Greenberg</a></li>
+            <li><a href="womens_team/Livi Byers26322051.html" tabindex="0">Livi Byers</a></li>
+            <li><a href="womens_team/Lucia Llanes26328690.html" tabindex="0">Lucia Llanes</a></li>
+            <li><a href="womens_team/Mara Mocanu23687883.html" tabindex="0">Mara Mocanu</a></li>
+            <li><a href="womens_team/Nina Beals23564881.html" tabindex="0">Nina Beals</a></li>
+            <li><a href="womens_team/Pia Odell26328678.html" tabindex="0">Pia Odell</a></li>
+            <li><a href="womens_team/Ruthie Scott23349715.html" tabindex="0">Ruthie Scott</a></li>
+            <li><a href="womens_team/Tia Cocciolone22520342.html" tabindex="0">Tia Cocciolone</a></li>
+            <li><a href="womens_team/Vera Naines18895017.html" tabindex="0">Vera Naines</a></li>
+            <li><a href="womens_team/Violet Olley26328683.html" tabindex="0">Violet Olley</a></li>
+        </ul>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top button">Top</button>
+
+    <script>
+        // Function to search for a specific name and scroll to it
+        function searchName() {
+            const name = document.getElementById('searchInput').value.trim();
+            const elements = document.querySelectorAll('ul li a');
+            let found = false;
+
+            elements.forEach((element) => {
+                if (element.textContent.trim().toLowerCase() === name.toLowerCase()) {
+                    element.focus();
+                    element.scrollIntoView({ behavior: 'smooth' });
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                alert('Name not found');
+            }
+        }
+
+        // Show or hide the scroll-to-top button
+        window.onscroll = function () { toggleScrollTopButton(); };
+
+        function toggleScrollTopButton() {
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        }
+
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>

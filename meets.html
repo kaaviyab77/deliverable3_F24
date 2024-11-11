@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Team</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styleList.css">
+    <script src="https://kit.fontawesome.com/YOUR_ID.js" crossorigin="anonymous"></script>
+    <style>
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #scrollTopBtn:focus {
+            outline: 2px solid #fff;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #333;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: 0;
+            left: -10000px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip to content link -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="womens.html">Women's Team</a></li>
+            <li><a href="mens.html">Men's Team</a></li>
+        </ul>
+    </nav>
+
+    <div id="main" role="main" tabindex="-1">
+        <h1>Past Meets</h1>
+
+        <!-- Search bar -->
+        <div>
+            <label for="searchInput">Search Meets:</label>
+            <input type="text" id="searchInput" placeholder="Enter name to search..." aria-label="Search name input">
+            <button type="button" onclick="searchName()">Search</button>
+        </div>
+
+        <ul id="teamList">
+            <li><a href="meets/37th_Early_Bird_Open_Mens_5000_Meters_HS_Open_5K_24.html">Men's 37th Early Bird Open</a>
+            </li>
+            <li><a href="meets/37th_Early_Bird_Open_Womens_5000_Meters_HS_Open_5K_24.html">Women's 37th Early Bird
+                    Open</a></li>
+            <li><a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_Boys_24.html">D1 Men's 56th
+                    Holly-Duane Raffin Festival</a></li>
+            <li><a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Mens_5000_Meters_D1_JV_Boys_24.html">D1 JV
+                    Men's 56th
+                    Holly-Duane Raffin Festival</a></li>
+            <li><a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_Girls_24.html">D1 Women's
+                    56th
+                    Holly-Duane Raffin Festival</a></li>
+            <li><a href="meets/56th_Holly-Duane_Raffin_Festival_of_Races_Womens_5000_Meters_D1_JV_Girls_24.html">D1 JV
+                    Women's 56th
+                    Holly-Duane Raffin Festival</a>
+            </li>
+            <li><a href="meets/Bret_Clements_Bath_Invitational_Mens_5000_Meters_Class_1_24.html">Class 1 Men's Bret
+                    Clements Bath Invitational</a></li>
+            <li><a href="meets/Bret_Clements_Bath_Invitational_Mens_5000_Meters_J.V._24.html">JV Men's Bret Clements
+                    Bath Invitational</a></li>
+            <li><a href="meets/Bret_Clements_Bath_Invitational_Womens_5000_Meters_Class_1_24.html">Class 1 Women's Bret
+                    Clements Bath Invitational</a></li>
+            <li><a href="meets/Bret_Clements_Bath_Invitational_Womens_5000_Meters_J.V._24.html">JV Women's Bret Clements
+                    Bath Invitational</a></li>
+            <li><a href="meets/Jackson_Invitational_Mens_5000_Meters_Orange_Division_(1000_+_enrolment)_24.html">Men's
+                    Jackson Invitational</a>
+            </li>
+            <li><a href="meets/Jackson_Invitational_Womens_5000_Meters_Orange_Division_(1000_+_enrolment)_24.html">Women's
+                    Jackson Invitational</a>
+            </li>
+            <li><a href="meets/SEC_Jamboree_#1_Mens_5000_Meters_Junior_Varsity_24.html">JV Men's SEC Jamboree #1</a>
+            </li>
+            <li><a href="meets/SEC_Jamboree_#1_Mens_5000_Meters_Varsity_24.html">Varsity Men's SEC Jamboree #1</a></li>
+            <li><a href="meets/SEC_Jamboree_#1_Womens_5000_Meters_Junior_Varsity_24.html">JV Women's SEC Jamboree #1</a>
+            </li>
+            <li><a href="meets/SEC_Jamboree_#1_Womens_5000_Meters_Varsity_24.html">Varsity Women's SEC Jamboree #1</a>
+            </li>
+            <li><a href="meets/SEC-HS_Jamboree_#2_(Red)_Mens_5000_Meters_Reserve_Boys_24.html">JV Men's SEC Jamboree
+                    #2</a></li>
+            <li><a href="meets/SEC-HS_Jamboree_#2_(Red)_Mens_5000_Meters_Varsity_Boys_24.html">Varsity Men's SEC
+                    Jamboree #2</a></li>
+            <li><a href="meets/SEC-HS_Jamboree_#2_(Red)_Womens_5000_Meters_Reserve_Girls_24.html">JV Women's SEC
+                    Jamboree #2</a></li>
+            <li><a href="meets/SEC-HS_Jamboree_#2_(Red)_Womens_5000_Meters_Varsity_Girls_24.html">Varsity Women's SEC
+                    Jamboree #2</a></li>
+        </ul>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top of the page">Top</button>
+
+    <script>
+        // Function to search for a specific name and scroll to it
+        function searchName() {
+            const name = document.getElementById('searchInput').value.trim().toLowerCase();
+            const teamList = document.getElementById('teamList').getElementsByTagName('li');
+            let found = false;
+
+            for (const item of teamList) {
+                if (item.textContent.toLowerCase().includes(name)) {
+                    item.firstChild.focus();
+                    item.scrollIntoView({ behavior: 'smooth' });
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                alert('Name not found');
+            }
+        }
+
+        // Show or hide the scroll-to-top button
+        window.onscroll = function () { toggleScrollTopButton(); };
+
+        function toggleScrollTopButton() {
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        }
+
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.body.focus();
+        }
+    </script>
+</body>
+
+</html>
